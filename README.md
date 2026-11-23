@@ -50,7 +50,8 @@ A modern, full-stack e-commerce application built with **React**, **FastAPI**, a
 - **Admin Panel**: http://localhost:5030
 - **API Documentation**: http://localhost:8000/docs
 
-> 💡 **Related Projects**: Check out my [Portfolio](https://github.com/dera-delis) for more full-stack applications and [Project Showcase](PROJECT_SHOWCASE.md) for detailed technical implementation.
+> 💡 **Related Projects**: [Shiva Gupta] (https://github.com/Shiva-Gupta777) 
+     **Project Showcase:** [View Technical Documentation](PROJECT_SHOWCASE.md)     
 
 ## 📸 **Screenshots**
 
@@ -173,6 +174,25 @@ graph TB
 - **Axios** - HTTP client
 - **Context API** - State management
 
+🛠️ DevOps Implementation
+
+Completed – Docker Foundation
+Created and configured Dockerfiles for application services.
+Containerized the E-commerce application using Docker.
+Implemented multi-container orchestration using Docker Compose.
+Configured container networking and persistent storage.
+Studied Docker troubleshooting, debugging, and health monitoring.
+
+Upcoming Implementation
+
+GitHub Actions – CI/CD automation
+AWS ECR – Container image management
+Terraform – Infrastructure as Code
+AWS EKS and Kubernetes – Container orchestration
+Helm and Argo CD – Deployment automation and GitOps
+Prometheus, Grafana and Loki – Monitoring and observability
+AI-powered AIOps – Incident detection, analysis and safe remediation
+
 ### **Backend**
 - **FastAPI** - Modern Python web framework
 - **SQLAlchemy** - Python ORM
@@ -239,8 +259,8 @@ graph TB
 
 1. **Clone the repository**
 ```bash
-git clone <your-repo-url>
-cd E-commerce-Store
+git clone https://github.com/Shiva-Gupta777/Ai-powered-devops-aiops-platform.git
+cd Ai-powered-devops-aiops-platform/E-commerce-Store
 ```
 
 2. **Start the application**
@@ -253,15 +273,7 @@ docker-compose up -d --build
 - Admin Panel: http://localhost:5030
 - API Docs: http://localhost:8000/docs
 
-### **Default Credentials**
 
-**Admin Account:**
-- Email: `admin@ecommerce.com`
-- Password: `admin123`
-
-**Test Customer:**
-- Email: `test@example.com`
-- Password: `test123`
 
 ## 📊 **Database Schema**
 
@@ -457,7 +469,7 @@ graph TB
 **Backend (Cloud Run):**
 ```env
 DATABASE_URL=postgresql://user:password@/ecommerce?host=/cloudsql/instance
-JWT_SECRET_KEY=production-secret-key
+JWT_SECRET_KEY=your_secure_secret
 JWT_ALGORITHM=HS256
 JWT_ACCESS_TOKEN_EXPIRE_MINUTES=30
 GCS_BUCKET_NAME=ecommerce-store-product-images
@@ -469,12 +481,33 @@ CORS_ORIGINS=https://ecommerce-frontend-192614808954.us-central1.run.app,https:/
 REACT_APP_API_URL=https://ecommerce-backend-192614808954.us-central1.run.app
 ```
 
+## 🛠️ DevOps Implementation
+
+### Completed – Docker Foundation
+
+- Created and configured Dockerfiles for application services.
+- Containerized the E-commerce application using Docker.
+- Implemented multi-container orchestration using Docker Compose.
+- Configured container networking and persistent storage.
+- Studied Docker troubleshooting, debugging, and health monitoring.
+
+### Upcoming Implementation
+
+- GitHub Actions – CI/CD automation
+- AWS ECR – Container image management
+- Terraform – Infrastructure as Code
+- AWS EKS and Kubernetes – Container orchestration
+- Helm and Argo CD – Deployment automation and GitOps
+- Prometheus, Grafana and Loki – Monitoring and observability
+- AI-powered AIOps – Incident detection, analysis and safe remediation
+
 ### **🚀 Local Development Setup**
 
 1. **Clone the repository**
 ```bash
-git clone https://github.com/dera-delis/E-commerce-Store.git
-cd E-commerce-Store
+git clone https://github.com/Shiva-Gupta777/Ai-powered-devops-aiops-platform.git
+
+cd Ai-powered-devops-aiops-platform/E-commerce-Store
 ```
 
 2. **Start with Docker Compose**
@@ -501,9 +534,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 👨‍💻 **Developer**
 
-**Dera Delis**
-- GitHub: [@dera-delis](https://github.com/dera-delis)
-- LinkedIn: [Dera Delis](https://www.linkedin.com/in/dera-delis/)
+**Shiva Gupta**
+- GitHub:   [Shiva Gupta](https://github.com/Shiva-Gupta777)
+- LinkedIn: [Shiva Gupta](https://www.linkedin.com/in/shiva-gupta-1208in/)
 
 ## 🙏 **Acknowledgments**
 
@@ -513,6 +546,16 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - PostgreSQL team for the robust database system
 
 ---
+
+## Original Project Attribution
+
+The original E-commerce application was developed by Dera Delis.
+
+- Original Repository: https://github.com/dera-delis/E-commerce-Store
+- Original Developer: https://github.com/dera-delis
+
+This repository extends the original application with DevOps and cloud-native engineering implementations.
+
 
 ## 🎯 **Why This Project?**
 
@@ -530,4 +573,5 @@ This e-commerce application demonstrates **enterprise-level full-stack developme
 
 ---
 
-**Built with ❤️ using modern web technologies** | **Portfolio Project by [Dera Delis](https://www.linkedin.com/in/dera-delis/)**
+
+Maintained by [Shiva Gupta](https://github.com/Shiva-Gupta777) | [LinkedIn](https://www.linkedin.com/in/shiva-gupta-1208in/)
