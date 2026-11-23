@@ -4,7 +4,7 @@ from app.models import Base
 import os
 
 # Database URL
-DATABASE_URL = os.getenv("DATABASE_URL", "postgresql://postgres:password@postgres:5432/ecommerce")
+DATABASE_URL = os.getenv("DATABASE_URL", "postgresql+psycopg2://postgres:password@postgres:5432/ecommerce")
 
 # Create engine with connection pool settings for Cloud Run
 # Use echo=False to avoid logging all SQL queries

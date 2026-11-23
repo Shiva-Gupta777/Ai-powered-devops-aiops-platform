@@ -6,7 +6,7 @@ import os
 class Settings(BaseSettings):
     # Database - reads from DATABASE_URL environment variable
     # Also supports database_url for backward compatibility
-    database_url: str = os.getenv("DATABASE_URL", "postgresql://postgres:password@localhost:5432/ecommerce")
+    database_url: str = os.getenv("DATABASE_URL", "postgresql+psycopg2://postgres:password@localhost:5432/ecommerce")
     
     # JWT - reads from JWT_SECRET_KEY, JWT_ALGORITHM, JWT_ACCESS_TOKEN_EXPIRE_MINUTES
     secret_key: str = os.getenv("JWT_SECRET_KEY", "your-super-secret-key-change-in-production")

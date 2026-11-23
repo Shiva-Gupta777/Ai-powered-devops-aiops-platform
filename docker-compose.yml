@@ -51,7 +51,7 @@ services:
       dockerfile: Dockerfile
     container_name: ecommerce-frontend
     ports:
-      - "3000:3000"
+      - "3001:3000"
     environment:
       - REACT_APP_API_URL=${REACT_APP_API_URL:-http://localhost:8000}
       - REACT_APP_ENVIRONMENT=${REACT_APP_ENVIRONMENT:-development}
@@ -93,4 +93,5 @@ volumes:
 networks:
   ecommerce-network:
     driver: bridge
+
 
