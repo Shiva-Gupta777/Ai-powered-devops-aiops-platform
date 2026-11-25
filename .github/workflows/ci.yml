@@ -1,0 +1,85 @@
+
+name: E-Commerce Application CI
+
+# When should the pipeline run?
+on:
+  push:
+    branches:
+      - main
+
+  pull_request:
+    branches:
+      - main
+
+# Minimum permissions required
+permissions:
+  contents: read
+
+# Job 1: Customer Frontend
+jobs:
+  customer-frontend:
+    name: Customer Frontend CI
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+        working-directory: frontend
+
+      - name: Build customer frontend
+        run: npm run build
+        working-directory: frontend
+
+  # Job 2: Admin Frontend
+  admin-frontend:
+    name: Admin Frontend CI
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+
+      - name: Install dependencies
+        run: npm install --no-audit --no-fund
+        working-directory: admin-frontend
+
+      - name: Build admin frontend
+        run: npm run build
+        working-directory: admin-frontend
+
+  # Job 3: Backend
+  backend:
+    name: Backend CI
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install backend dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+        working-directory: backend
+
+      - name: Validate Python syntax
+        run: python -m compileall -q .
+        working-directory: backend
